@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/White"
+    tools:context="com.fit.vedads.appstore.SectionAplikacije.DetaljiAppActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView android:text="Naziv"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtVNaziv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/light_blue"/>
+
+    <ImageView
+        android:background="@drawable/border"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageViewDetalji"
+        android:layout_below="@+id/txtVNaziv"
+        />
+
+    <TextView android:text="Opis"
+        android:gravity="fill_horizontal"
+        android:layout_below="@+id/imageViewDetalji"
+        android:id="@+id/txtVO"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+            <View android:id="@+id/separator"
+                android:background="@color/LightSlateGray"
+                android:layout_below="@+id/txtVO"
+                android:layout_width = "fill_parent"
+                android:layout_height="1dip"
+                android:layout_margin="10dp"/>
+
+    <TextView android:text="Cijena"
+        android:layout_below="@+id/separator"
+        android:id="@+id/txtVCijena"
+        android:textSize="18dp"
+        android:textColor="@color/light_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView android:text="Broj preuzimanja"
+        android:layout_below="@+id/txtVCijena"
+        android:id="@+id/txtVpreuzimanja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/txtVpreuzimanja"
+        android:id="@+id/txtBVelicina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+     <Button
+         android:id="@+id/btnPreuzmi"
+         android:layout_width="150dp"
+         android:layout_height="50dp"
+         android:layout_margin="20dp"
+         android:layout_marginBottom="40dp"
+         android:layout_centerHorizontal="true"
+         android:text="Preuzmi"
+         android:layout_below="@+id/txtBVelicina"
+         android:typeface="sans"
+         android:textColor="@color/White"
+         android:background="@drawable/button_shape"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

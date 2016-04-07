@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">App Store</string>
+    <string name="title_top10">Top preuzimane aplikacije</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_pretraga_aplikacija">Pretraga aplikacija</string>
+    <string name="title_activity_detalji_app">Aplikacija</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_profil">Profil</string>
+    <string name="title_activity_sliding_menu">SlidingMenuActivity</string>
+    <string name="drawer_otvoren">Otvoren</string>
+    <string name="drawer_zatvoren">Zatvoren</string>
+    <string name="title_activity_home">Home</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="nav_drawer_strings">
+        <item>Profil</item>
+        <item>Pretraga</item>
+        <item>Kategorije</item>
+        <item>Odjava</item>
+    </string-array>
+
+    <string name="title_activity_kategorije_fragment">kategorije_fragment</string>
+    <string name="title_activity_payment_fragment">PaymentFragment</string>
+    <string name="title_activity_registracija">Registracija</string>
+
+</resources>

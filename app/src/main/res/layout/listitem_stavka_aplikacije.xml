@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal"
+android:padding="8dp"
+    android:layout_margin="5dp"
+android:background="@drawable/listitem_selector"
+android:baselineAligned="false">
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"><!-- width 0dp-->
+    <TextView
+        android:textColor="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:text="Naziv aplikacije"
+        android:id="@+id/txtVNazivApp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+
+        android:textColor="@color/WhiteSmoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Opis"
+        android:gravity="fill_horizontal"
+        android:textAlignment="center"
+        android:id="@+id/txtVOpis"
+        android:layout_below="@+id/txtVNazivApp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:textColor="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Broj preuzimanja"
+        android:id="@+id/txtVBrPreuzimanja"
+        android:layout_below="@+id/txtVOpis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.50"
+    android:layout_gravity="center">
+    <com.fit.vedads.appstore.design.RoundedCorner
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="0dp"
+        android:id="@+id/imageViewThumb"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
+</LinearLayout>
